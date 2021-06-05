@@ -16,9 +16,8 @@ const App: VFC = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen font-mono text-sm text-gray-600">
       <QueryClientProvider client={queryClient}>
-        <BrowserRouter>
-          <ReactQueryDevtools initialIsOpen={false} />
-        </BrowserRouter>
+        <BrowserRouter></BrowserRouter>
+        <ReactQueryDevtools initialIsOpen={false} />
       </QueryClientProvider>
     </div>
   )
