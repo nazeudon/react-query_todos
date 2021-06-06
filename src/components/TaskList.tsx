@@ -1,8 +1,8 @@
 import { VFC, memo } from 'react'
 import { useQueryTasks } from '../hooks/useQueryTasks'
-import { TaskItem } from './TaskItem'
+import { TaskItemMemo } from './TaskItem'
 
-export const TaskList: VFC = () => {
+const TaskList: VFC = () => {
   const { status, data } = useQueryTasks()
   console.log('rendered TaskList')
 
@@ -14,10 +14,12 @@ export const TaskList: VFC = () => {
       {data?.map((task) => (
         <div key={task.id}>
           <ul>
-            <TaskItem task={task} />
+            <TaskItemMemo task={task} />
           </ul>
         </div>
       ))}
     </div>
   )
 }
+
+export const TaskListMemo = memo(TaskList)

@@ -36,7 +36,7 @@ export const useMutateTag = () => {
             )
           )
         }
-        dispatch(resetEditedTag)
+        dispatch(resetEditedTag())
       },
     }
   )
@@ -53,7 +53,7 @@ export const useMutateTag = () => {
             previousTodos.filter((tag) => tag.id !== variables)
           )
         }
-        dispatch(resetEditedTag)
+        dispatch(resetEditedTag())
       },
     }
   )

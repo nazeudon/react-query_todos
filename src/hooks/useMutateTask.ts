@@ -42,7 +42,7 @@ export const useMutateTask = () => {
             )
           )
         }
-        dispatch(resetEditedTask)
+        dispatch(resetEditedTask())
       },
     }
   )
@@ -59,7 +59,7 @@ export const useMutateTask = () => {
             previousTodos.filter((task) => task.id !== variables)
           )
         }
-        dispatch(resetEditedTask)
+        dispatch(resetEditedTask())
       },
     }
   )
