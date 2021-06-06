@@ -10,7 +10,7 @@ export const useQueryTasks = () => {
     return data
   }
 
-  return useQuery<Task[] | Error>({
+  return useQuery<Task[], Error>({
     queryKey: 'tasks',
     queryFn: getTasks,
     staleTime: 0,
