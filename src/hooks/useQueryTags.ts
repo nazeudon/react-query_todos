@@ -10,7 +10,7 @@ export const useQueryTags = () => {
     return data
   }
 
-  return useQuery<Tag[] | Error>({
+  return useQuery<Tag[], Error>({
     queryKey: 'tags',
     queryFn: getTags,
     staleTime: 60000,
