@@ -14,5 +14,8 @@ export const useQueryTags = () => {
     queryKey: 'tags',
     queryFn: getTags,
     staleTime: 60000,
+    // cacheTime: 30000,
+    // refetchInterval: 10000
+    // refetchOnWindowFocus: true,
   })
 }

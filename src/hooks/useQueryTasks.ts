@@ -16,5 +16,6 @@ export const useQueryTasks = () => {
     staleTime: 0,
     // cacheTime: 30000,
     // refetchInterval: 10000
+    // refetchOnWindowFocus: true,
   })
 }
